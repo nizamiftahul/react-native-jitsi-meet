@@ -108,6 +108,7 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
             public void run() {
                 if (mJitsiMeetViewReference.getJitsiMeetView() != null) {
                     mJitsiMeetViewReference.getJitsiMeetView().leave();
+                    mJitsiMeetViewReference.getJitsiMeetView().dispose();
                 }
             }
         });
