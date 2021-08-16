@@ -173,7 +173,6 @@ public class RNJitsiMeetView extends BaseReactView<JitsiMeetViewListener>
     @Override
     protected void onDetachedFromWindow() {
         dispose();
-        leave();
         super.onDetachedFromWindow();
     }
 }
