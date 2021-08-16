@@ -103,8 +103,8 @@ public class RNJitsiMeetViewManager extends SimpleViewManager<RNJitsiMeetView> {
                     = new RNJitsiMeetConferenceOptions.Builder()
                     .setRoom(url)
                     .setUserInfo(_userInfo)
-                    .setFeatureFlag("chat.enabled", false)
                     .setFeatureFlag("pip.enabled", false)
+                    .setFeatureFlag("calendar.enabled", false)
                     .setAudioOnly(audioOnly)
                     .build();
 
