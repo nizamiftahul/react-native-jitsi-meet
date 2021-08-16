@@ -117,7 +117,7 @@ public class RNJitsiMeetViewManager extends SimpleViewManager<RNJitsiMeetView> {
         for (BroadcastEvent.Type type : BroadcastEvent.Type.values()) {
             intentFilter.addAction(type.getAction());
         }
-
+        LocalBroadcastManager.getInstance(mJitsiMeetViewReference.getJitsiMeetView().getContext()).unregisterReceiver(broadcastReceiver);
         LocalBroadcastManager.getInstance(mJitsiMeetViewReference.getJitsiMeetView().getContext()).registerReceiver(broadcastReceiver, intentFilter);
     }
 
