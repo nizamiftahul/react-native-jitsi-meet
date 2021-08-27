@@ -169,4 +169,10 @@ public class RNJitsiMeetView extends BaseReactView<JitsiMeetViewListener>
     protected void onExternalAPIEvent(String name, ReadableMap data) {
         onExternalAPIEvent(LISTENER_METHODS, name, data);
     }
+
+    @Override
+    protected void onDetachedFromWindow() {
+        dispose();
+        super.onDetachedFromWindow();
+    }
 }
