@@ -94,6 +94,9 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                             .setUserInfo(_userInfo)
                             .setFeatureFlag("pip.enabled", false)
                             .setFeatureFlag("calendar.enabled", false)
+                            .setFeatureFlag("addPeople.enabled", false)
+                            .setFeatureFlag("invite.enabled", false)
+                            .setFeatureFlag("toolbox.enabled", false)
                             .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
                 }
