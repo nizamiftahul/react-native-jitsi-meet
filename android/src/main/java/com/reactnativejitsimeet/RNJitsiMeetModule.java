@@ -60,6 +60,15 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                             .setFeatureFlag("pip.enabled", false)
                             .setFeatureFlag("calendar.enabled", false)
                             .setFeatureFlag("chat.enabled", false)
+                            .setFeatureFlag("video-share.enabled", false)
+                            .setFeatureFlag("video-mute.enabled", false)
+                            .setFeatureFlag("recording.enabled", false)
+                            .setFeatureFlag("add-people.enabled", false)
+                            .setFeatureFlag("invite.enabled", false)
+                            .setFeatureFlag("ios.recording.enabled", false)
+                            .setFeatureFlag("ios.screensharing.enabled", false)
+                            .setFeatureFlag("live-streaming.enabled", false)
+                            .setFeatureFlag("raise-hand.enabled", false)
                             .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
                 }
@@ -96,6 +105,15 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                             .setFeatureFlag("pip.enabled", false)
                             .setFeatureFlag("calendar.enabled", false)
                             .setFeatureFlag("chat.enabled", false)
+                            .setFeatureFlag("video-share.enabled", false)
+                            .setFeatureFlag("video-mute.enabled", false)
+                            .setFeatureFlag("recording.enabled", false)
+                            .setFeatureFlag("add-people.enabled", false)
+                            .setFeatureFlag("invite.enabled", false)
+                            .setFeatureFlag("ios.recording.enabled", false)
+                            .setFeatureFlag("ios.screensharing.enabled", false)
+                            .setFeatureFlag("live-streaming.enabled", false)
+                            .setFeatureFlag("raise-hand.enabled", false)
                             .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
                 }
